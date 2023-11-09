@@ -84,6 +84,8 @@ void opcontrol(void);
 #include "subsystemhead/intake.hpp"
 #include "subsystemhead/lift.hpp"
 #include "subsystemhead/matchload.hpp"
+#include "subsystemhead/auto/pid.hpp"
+#include "subsystemhead/auto/odometry.hpp"
 
 #endif
 

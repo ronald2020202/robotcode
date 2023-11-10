@@ -1,3 +1,3 @@
-# New10F
+# 3388H
 
-VEX VRC Over Under 210F bot code.
+VEX VRC Over Under 3388H bot code.

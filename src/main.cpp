@@ -4,32 +4,23 @@ void initialize() {}
 void disabled() {}
 void competition_initialize() {}
 
-
-
-
-
-void autonomous() {
-	//auton here
-	//code pid and odom in other files, run them here
+void autonomous()
+{
+	// auton here
+	// code pid and odom in other files, run them here
 }
 
+void opcontrol()
+{
+	pair<bool, bool> pastthencur = {false, false};
+	while (1)
+	{
 
-
-
-
-void opcontrol() {
-	bool past = false;
-	while(1) {
-		
 		setMotors();
 		setIntake();
 		setLift();
-		past = setLoad(past);
+		pastthencur = setLoad(pastthencur.first, pastthencur.second);
 
-		pros::delay(10);//10 milliseconds
+		pros::delay(10); // 10 milliseconds
 	}
 }
-
-
-
-

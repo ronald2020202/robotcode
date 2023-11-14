@@ -2,4 +2,4 @@
 
 void setLoadVoltage(int power);
 
-bool setLoad(bool past);
+pair<bool, bool> setLoad(bool past, bool cur);

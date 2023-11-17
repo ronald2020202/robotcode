@@ -8,17 +8,17 @@ void setLoadVoltage(int power)
 
 pair<bool, bool> setLoad(bool past, bool cur)
 {
-    bool L1TON = controller.get_digital(pros::E_CONTROLLER_DIGITAL_X);
-    if (!past && L1TON)
+    bool ATON = controller.get_digital(pros::E_CONTROLLER_DIGITAL_A);
+    if (!past && ATON)
     {
         cur = true;
     }
-    else if (past && !L1TON)
+    else if (past && !ATON)
     {
         cur = false;
     }
 
     setLoadVoltage(127 * cur);
 
-    return {L1TON, cur};
+    return {ATON, cur};
 }

@@ -14,3 +14,4 @@ extern pros::Motor scorerright;
 extern pros::Motor lift;
 
 extern pros::ADIEncoder encoder;
+extern pros::ADIDigitalOut wingpneumatics;

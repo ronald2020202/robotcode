@@ -13,6 +13,7 @@ pros::Motor scorerleft(16, pros::E_MOTOR_GEARSET_06, true, pros::E_MOTOR_ENCODER
 pros::Motor scorerright(14, pros::E_MOTOR_GEARSET_06, false, pros::E_MOTOR_ENCODER_COUNTS);
 pros::Motor lift(19, pros::E_MOTOR_GEARSET_36, true, pros::E_MOTOR_ENCODER_COUNTS);
 
-pros::ADIEncoder encoder(17, 18, false); // 360 ticks per rotation
+pros::ADIEncoder encoder('G', 'H', false); // 360 ticks per rotation
+pros::ADIDigitalOut wingpneumatics('F', false);
 
 // REMEMBER TO ACCOUNT FOR GEAR RATIO
